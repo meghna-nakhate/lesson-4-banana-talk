@@ -1,3 +1,10 @@
+:root{
+    background-color: aqua;
+    --primary-color: e6dd3b;
+}
+body{
+    background-image: "images/heroimg.svg";
+}
 textarea{
     width:90%;
     height: 10vh;
@@ -8,11 +15,6 @@ textarea{
 }
 .hero-img{
     margin:2rem;
-}
-:root{
-    background-color: aqua;
-    --primary-color: e6dd3b;
-
 }
 .button {
     background-color: #e0f568;
