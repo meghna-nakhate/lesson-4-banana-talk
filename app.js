@@ -1,4 +1,4 @@
-var btnTranslate = document.querySelector(".button");
+var btnTranslate = document.querySelector("#button");
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
 
@@ -9,7 +9,8 @@ function getTranslationURL(text) {
 }
 
 function errorHandler(error){
-    console.log("error occured",error)
+    console.log("error occured",error);
+
 }
 
 function clickHandler() {
@@ -21,7 +22,7 @@ function clickHandler() {
         .then(response => response, json())
         .then(json => {
             var translatedText = json.contents.translated;
-            outputDiv.innertext=translatedText;
+            outputDiv.innertext=translatedText; //output
         })
         .catch(errorHandler)
 };
