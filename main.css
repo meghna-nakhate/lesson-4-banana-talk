@@ -2,9 +2,7 @@
     background-color: aqua;
     --primary-color: e6dd3b;
 }
-body{
-    background-image: "images/heroimg.svg";
-}
+
 textarea{
     width:90%;
     height: 10vh;
@@ -13,9 +11,7 @@ textarea{
     padding: 2rem;
 
 }
-.hero-img{
-    margin:2rem;
-}
+
 #button {
     background-color: #e0f568;
     border-radius: 1rem;

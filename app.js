@@ -10,11 +10,11 @@ function getTranslationURL(text) {
 
 function errorHandler(error){
     console.log("error occured",error);
+    alert("something went wrong!");
 
 }
 
 function clickHandler() {
-    // outputDiv.innertext("wsfgdhfj"+txtInput.value);
     var inputText = txtInput.value; //taking input 
 
     //calling server for processing
@@ -22,9 +22,9 @@ function clickHandler() {
         .then(response => response.json())
         .then(json => {
             var translatedText = json.contents.translated;
-            outputDiv.innertext=translatedText; //output
+            outputDiv.innerText=translatedText; //output
         })
         .catch(errorHandler)
 }
 
-btnTranslate.addEventListener("click", clickHandler())
+btnTranslate.addEventListener("click", clickHandler)
